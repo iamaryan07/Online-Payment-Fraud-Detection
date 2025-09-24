@@ -1,0 +1,26 @@
+# Core Framework
+streamlit==1.39.0
+pandas==2.1.4
+numpy==1.26.2
+
+# Machine Learning
+scikit-learn==1.3.0
+
+# Database
+sqlalchemy==2.0.25
+
+# Security & Authentication
+bcrypt==4.2.0
+hashlib2==1.0.1
+
+# Date and Time Utilities
+python-dateutil==2.8.2
+
+# JSON Processing (built-in, but good to specify)
+# json - built into Python
+
+# Additional Utilities
+random2==1.0.2
+
+# Development and Debugging (optional but useful)
+plotly==5.17.0
