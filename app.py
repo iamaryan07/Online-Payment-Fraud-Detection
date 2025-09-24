@@ -1,4 +1,5 @@
 # app.py - FINAL VERSION - Landing page only for users
+# app.py - FINAL VERSION - Landing page only for users
 import streamlit as st
 import hashlib
 from sqlalchemy import text
@@ -235,15 +236,16 @@ def main():
         st.markdown("---")
         
         # Demo credentials - UPDATED descriptions
+        # Demo credentials - UPDATED with new working accounts
         st.markdown("### 🚀 Quick Access Demo Credentials")
         col1, col2, col3 = st.columns(3)
         with col1:
-            st.info("**👨‍💼 Admin**\n📧 admin@fraud-detect.local\n🔑 admin123\n🛠️ Admin + Cyber Access")
+            st.info("**👤 Customer**\n📧 demo@user.com\n🔑 demo123\n🏠 User Dashboard")
         with col2:
-            st.info("**🕵️ Cyber Official**\n📧 cyber@fraud-detect.local\n🔑 cyber123\n🕵️ Cyber Access")
+            st.info("**🕵️ Cyber Official**\n📧 demo@cyber.com\n🔑 cyber\n🕵️ Investigation Tools")
         with col3:
-            st.info("**👤 Customer**\n📧 user@fraud-detect.local\n🔑 user123\n🏠 User Dashboard + Landing")
-    
+            st.info("**🛠️ Administrator**\n📧 demo@admin.com\n🔑 admin\n🛠️ Full System Access")
+
     # If authenticated, set up role-based navigation
     else:
         role = st.session_state.get("role")
